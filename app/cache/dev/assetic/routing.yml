@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: 'C:/xampp/htdocs/5cmDBPostgre/app/config/routing_dev.yml'
+    resource: 'C:/xampp/htdocs/5cm/5cmDBPostgre/app/config/routing_dev.yml'
