@@ -1,0 +1,25 @@
+Wolf\ScmCityBundle\Entity\comuniAttivati:
+  type: entity
+  fields:
+    id:
+      id: true
+      type: integer
+      generator:
+        strategy: AUTO
+    nome:
+      type: string
+      unique: true
+      nullable: true
+    pathFrontImage:
+      type: string
+      unique: true
+      nullable: true
+    pathFrontImageBlurred:
+      type: string
+      unique: true
+      nullable: true
+    dataIns:
+      type: datetime
+      nullable: true
+  lifecycleCallbacks:
+    prePersist: [setDataInsValue]

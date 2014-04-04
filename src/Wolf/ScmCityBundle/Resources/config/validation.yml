@@ -1,0 +1,6 @@
+Wolf\ScmCityBundle\Entity\comuniAttivati:
+    properties:
+        frontImage:
+            - Image: ~
+        frontImageBlurred:
+            - Image: ~

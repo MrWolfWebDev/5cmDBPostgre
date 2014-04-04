@@ -1,0 +1,30 @@
+comuni:
+    pattern:  /
+    defaults: { _controller: "WolfScmCityBundle:comuniAttivati:index" }
+
+comuni_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "WolfScmCityBundle:comuniAttivati:show" }
+
+comuni_new:
+    pattern:  /new
+    defaults: { _controller: "WolfScmCityBundle:comuniAttivati:new" }
+
+comuni_create:
+    pattern:  /create
+    defaults: { _controller: "WolfScmCityBundle:comuniAttivati:create" }
+    requirements: { _method: post }
+
+comuni_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "WolfScmCityBundle:comuniAttivati:edit" }
+
+comuni_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "WolfScmCityBundle:comuniAttivati:update" }
+    requirements: { _method: post|put }
+
+comuni_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "WolfScmCityBundle:comuniAttivati:delete" }
+    requirements: { _method: post|delete }
