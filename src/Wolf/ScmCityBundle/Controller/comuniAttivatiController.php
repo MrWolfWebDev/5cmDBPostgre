@@ -237,4 +237,20 @@ class comuniAttivatiController extends Controller
         ;
     }
 
+    public function selectAction( $id )
+    {
+        $em = $this->getDoctrine()->getManager();
+
+        $entity = $em->getRepository( 'WolfScmCityBundle:comuniAttivati' )->find( $id );
+
+        if ( !$entity )
+        {
+            throw $this->createNotFoundException( 'Non esiste un comune chiamato così.' );
+        }
+
+        return $this->render( 'WolfScmCityBundle:comuniAttivati:select.html.twig', array(
+                    'entity' => $entity,
+                ) );
+    }
+
 }

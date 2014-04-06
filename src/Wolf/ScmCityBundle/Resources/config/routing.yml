@@ -6,3 +6,11 @@ wolf_scm_city_homepage:
 WolfScmCityBundle_comuni:
     resource: "@WolfScmCityBundle/Resources/config/routing/comuniattivati.yml"
     prefix:   /comuni
+
+
+WolfScmCityBundle_comuni_select:
+    pattern: /comuni/{id}
+    defaults: { _controller: WolfScmCityBundle:comuniAttivati:select }
+
+Image_select:
+    pattern: /uploads/front/{image}

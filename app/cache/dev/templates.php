@@ -80,6 +80,7 @@
   'WolfScmCityBundle:comuniAttivati:edit.html.twig' => 'C:\\xampp\\htdocs\\5cmDBPostgre\\src\\Wolf\\ScmCityBundle/Resources/views/comuniAttivati/edit.html.twig',
   'WolfScmCityBundle:comuniAttivati:index.html.twig' => 'C:\\xampp\\htdocs\\5cmDBPostgre\\src\\Wolf\\ScmCityBundle/Resources/views/comuniAttivati/index.html.twig',
   'WolfScmCityBundle:comuniAttivati:new.html.twig' => 'C:\\xampp\\htdocs\\5cmDBPostgre\\src\\Wolf\\ScmCityBundle/Resources/views/comuniAttivati/new.html.twig',
+  'WolfScmCityBundle:comuniAttivati:select.html.twig' => 'C:\\xampp\\htdocs\\5cmDBPostgre\\src\\Wolf\\ScmCityBundle/Resources/views/comuniAttivati/select.html.twig',
   'WolfScmCityBundle:comuniAttivati:show.html.twig' => 'C:\\xampp\\htdocs\\5cmDBPostgre\\src\\Wolf\\ScmCityBundle/Resources/views/comuniAttivati/show.html.twig',
   'WolfScmCityBundle:Default:index.html.twig' => 'C:\\xampp\\htdocs\\5cmDBPostgre\\src\\Wolf\\ScmCityBundle/Resources/views/Default/index.html.twig',
   'WebProfilerBundle:Collector:config.html.twig' => 'C:\\xampp\\htdocs\\5cmDBPostgre\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\WebProfilerBundle/Resources/views/Collector/config.html.twig',

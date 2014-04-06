@@ -88,6 +88,16 @@ class appProdUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirecta
             }
             not_comuni_delete:
 
+            // WolfScmCityBundle_comuni_select
+            if (preg_match('#^/comuni/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'WolfScmCityBundle_comuni_select')), array (  '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::selectAction',));
+            }
+
+        }
+
+        // Image_select
+        if (0 === strpos($pathinfo, '/uploads/front') && preg_match('#^/uploads/front/(?P<image>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'Image_select')), array ());
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();

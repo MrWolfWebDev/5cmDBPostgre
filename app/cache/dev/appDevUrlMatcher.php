@@ -25,6 +25,27 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         $allow = array();
         $pathinfo = rawurldecode($pathinfo);
 
+        if (0 === strpos($pathinfo, '/css/c61fb6d')) {
+            // _assetic_c61fb6d
+            if ($pathinfo === '/css/c61fb6d.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => 'c61fb6d',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_c61fb6d',);
+            }
+
+            if (0 === strpos($pathinfo, '/css/c61fb6d_')) {
+                // _assetic_c61fb6d_0
+                if ($pathinfo === '/css/c61fb6d_bootstrap_1.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'c61fb6d',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_c61fb6d_0',);
+                }
+
+                // _assetic_c61fb6d_1
+                if ($pathinfo === '/css/c61fb6d_style_2.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => 'c61fb6d',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_c61fb6d_1',);
+                }
+
+            }
+
+        }
+
         if (0 === strpos($pathinfo, '/_')) {
             // _wdt
             if (0 === strpos($pathinfo, '/_wdt') && preg_match('#^/_wdt/(?P<token>[^/]++)$#s', $pathinfo, $matches)) {
@@ -196,6 +217,16 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
             }
             not_comuni_delete:
 
+            // WolfScmCityBundle_comuni_select
+            if (preg_match('#^/comuni/(?P<id>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => 'WolfScmCityBundle_comuni_select')), array (  '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::selectAction',));
+            }
+
+        }
+
+        // Image_select
+        if (0 === strpos($pathinfo, '/uploads/front') && preg_match('#^/uploads/front/(?P<image>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'Image_select')), array ());
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
