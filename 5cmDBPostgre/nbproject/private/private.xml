@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/src/Wolf/ScmCityBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/src/Wolf/ScmCityBundle/Controller/comuniAttivatiController.php</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/src/Wolf/ScmCityBundle/Resources/config/doctrine/comuniAttivati.orm.yml</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/app/config/config.yml</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/composer.json</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/src/Wolf/ScmCityBundle/Resources/views/comuniAttivati/show.html.twig</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/web/css/style.css</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/src/Wolf/ScmCityBundle/Entity/comuniAttivati.php</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/src/Wolf/ScmCityBundle/Resources/views/comuniAttivati/select.html.twig</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/app/config/config_prod.yml</file>
+            <file>file:/C:/xampp/htdocs/5cmDBPostgre/src/Wolf/ScmCityBundle/Form/comuniAttivatiType.php</file>
+        </group>
+    </open-files>
+</project-private>

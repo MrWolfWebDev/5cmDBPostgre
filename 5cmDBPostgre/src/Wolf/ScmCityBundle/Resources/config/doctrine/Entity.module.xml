@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<orm-designer version="2.3.4.871" mvc="Symfony2" orm="Doctrine2">
+  <module name="Entity" import-format="Doctrine2Yml" import-path="." uuid="1c80ac91-9136-4032-bb2c-154f19aec693">
+    <entity name="comuniAttivati" uuid="12a7fde8-a036-49bb-8b57-08c7c62ba14c">
+      <field name="id" type="integer" required="true" primary="true" uuid="b551f621-79c5-48d0-bdcf-82795a7019a2">
+        <orm-attributes>
+          <attribute name="generator">
+            <attribute name="strategy">AUTO</attribute>
+          </attribute>
+        </orm-attributes>
+      </field>
+      <field name="nome" type="string" unique="true" uuid="1f67856c-0c69-4f59-b4e8-5699a2aca53d"/>
+      <field name="pathFrontImage" type="string" unique="true" uuid="8ada4903-6bee-4e27-a1ba-d2435b7a03b5"/>
+      <field name="pathFrontImageBlurred" type="string" unique="true" uuid="a730be87-e932-46db-95c1-72f4229727cc"/>
+      <field name="dataIns" type="datetime" uuid="7dfce071-f424-4d0d-8864-c32537f5acda"/>
+      <field name="active" type="boolean" uuid="7f2cfba0-77bb-421c-97c5-af754b7dabc0"/>
+      <orm-attributes>
+        <attribute name="export-file-name">comuniAttivati.orm.yml</attribute>
+        <attribute name="lifecycle-callbacks">
+          <attribute name="lifecycle-callback">
+            <attribute name="method">setActiveValue</attribute>
+            <attribute name="type">prePersist</attribute>
+          </attribute>
+          <attribute name="lifecycle-callback">
+            <attribute name="type">prePersist</attribute>
+            <attribute name="method">setDataInsValue</attribute>
+          </attribute>
+        </attribute>
+      </orm-attributes>
+    </entity>
+    <orm-attributes>
+      <attribute name="namespace">Wolf\ScmCityBundle\Entity</attribute>
+    </orm-attributes>
+  </module>
+  <visual-data>
+    <entity uuid="12a7fde8-a036-49bb-8b57-08c7c62ba14c" position-x="20" position-y="40" size-x="0" size-x2="152" size-y="0" size-y2="87"/>
+    <module uuid="1c80ac91-9136-4032-bb2c-154f19aec693" bk-color="4294375930" position-x="50" position-y="50" size-x="0" size-x2="192" size-y="0" size-y2="147"/>
+  </visual-data>
+</orm-designer>

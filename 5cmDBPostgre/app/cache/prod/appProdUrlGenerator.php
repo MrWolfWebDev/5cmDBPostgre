@@ -1,0 +1,47 @@
+<?php
+
+use Symfony\Component\Routing\RequestContext;
+use Symfony\Component\Routing\Exception\RouteNotFoundException;
+use Psr\Log\LoggerInterface;
+
+/**
+ * appProdUrlGenerator
+ *
+ * This class has been auto-generated
+ * by the Symfony Routing Component.
+ */
+class appProdUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerator
+{
+    private static $declaredRoutes = array(
+        'wolf_scm_city_homepage' => array (  0 =>   array (    0 => 'name',  ),  1 =>   array (    '_controller' => 'Wolf\\ScmCityBundle\\Controller\\DefaultController::indexAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'name',    ),    1 =>     array (      0 => 'text',      1 => '/hello',    ),  ),  4 =>   array (  ),),
+        'comuni' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::indexAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/comuni/',    ),  ),  4 =>   array (  ),),
+        'comuni_show' => array (  0 =>   array (    0 => 'id',  ),  1 =>   array (    '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::showAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/show',    ),    1 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'id',    ),    2 =>     array (      0 => 'text',      1 => '/comuni',    ),  ),  4 =>   array (  ),),
+        'comuni_new' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::newAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/comuni/new',    ),  ),  4 =>   array (  ),),
+        'comuni_create' => array (  0 =>   array (  ),  1 =>   array (    '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::createAction',  ),  2 =>   array (    '_method' => 'post',  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/comuni/create',    ),  ),  4 =>   array (  ),),
+        'comuni_edit' => array (  0 =>   array (    0 => 'id',  ),  1 =>   array (    '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::editAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/edit',    ),    1 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'id',    ),    2 =>     array (      0 => 'text',      1 => '/comuni',    ),  ),  4 =>   array (  ),),
+        'comuni_update' => array (  0 =>   array (    0 => 'id',  ),  1 =>   array (    '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::updateAction',  ),  2 =>   array (    '_method' => 'post|put',  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/update',    ),    1 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'id',    ),    2 =>     array (      0 => 'text',      1 => '/comuni',    ),  ),  4 =>   array (  ),),
+        'comuni_delete' => array (  0 =>   array (    0 => 'id',  ),  1 =>   array (    '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::deleteAction',  ),  2 =>   array (    '_method' => 'post|delete',  ),  3 =>   array (    0 =>     array (      0 => 'text',      1 => '/delete',    ),    1 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'id',    ),    2 =>     array (      0 => 'text',      1 => '/comuni',    ),  ),  4 =>   array (  ),),
+        'WolfScmCityBundle_comuni_select' => array (  0 =>   array (    0 => 'id',  ),  1 =>   array (    '_controller' => 'Wolf\\ScmCityBundle\\Controller\\comuniAttivatiController::selectAction',  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'id',    ),    1 =>     array (      0 => 'text',      1 => '/comuni',    ),  ),  4 =>   array (  ),),
+        'Image_select' => array (  0 =>   array (    0 => 'image',  ),  1 =>   array (  ),  2 =>   array (  ),  3 =>   array (    0 =>     array (      0 => 'variable',      1 => '/',      2 => '[^/]++',      3 => 'image',    ),    1 =>     array (      0 => 'text',      1 => '/uploads/front',    ),  ),  4 =>   array (  ),),
+    );
+
+    /**
+     * Constructor.
+     */
+    public function __construct(RequestContext $context, LoggerInterface $logger = null)
+    {
+        $this->context = $context;
+        $this->logger = $logger;
+    }
+
+    public function generate($name, $parameters = array(), $referenceType = self::ABSOLUTE_PATH)
+    {
+        if (!isset(self::$declaredRoutes[$name])) {
+            throw new RouteNotFoundException(sprintf('Unable to generate a URL for the named route "%s" as such route does not exist.', $name));
+        }
+
+        list($variables, $defaults, $requirements, $tokens, $hostTokens) = self::$declaredRoutes[$name];
+
+        return $this->doGenerate($variables, $defaults, $requirements, $tokens, $parameters, $name, $referenceType, $hostTokens);
+    }
+}

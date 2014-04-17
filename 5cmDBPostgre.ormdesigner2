@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<orm-designer version="2.3.4.871" name="5cmDBPostgre" mvc="Symfony2" orm="Doctrine2" uuid="b3ddee06-7f29-4ba6-a56c-266c520f937b">
+  <external-module storage-path="src/Wolf/ScmCityBundle/Resources/config/doctrine/Entity.module.xml"/>
+  <visual-data>
+    <entity uuid="12a7fde8-a036-49bb-8b57-08c7c62ba14c" position-x="20" position-y="40" size-x="0" size-x2="152" size-y="0" size-y2="87"/>
+    <module uuid="1c80ac91-9136-4032-bb2c-154f19aec693" bk-color="4294375930" position-x="50" position-y="50" size-x="0" size-x2="192" size-y="0" size-y2="147"/>
+    <project uuid="b3ddee06-7f29-4ba6-a56c-266c520f937b" size-x="0" size-x2="292" size-y="0" size-y2="247"/>
+  </visual-data>
+</orm-designer>

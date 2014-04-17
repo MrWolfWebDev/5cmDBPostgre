@@ -1,0 +1,243 @@
+.unselectable{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+
+
+    /* No support for these yet, use at own risk */
+    -o-user-select: none;
+    user-select: none;          
+}
+
+.foot{
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-bottom: 50px;
+    color: #a5a5a5;
+}
+
+.border-foot{
+    border-left: solid #a5a5a5 1px;
+}
+
+.marginrow{
+    margin-bottom: 80px;
+}
+.top{
+    z-index: 300;
+    position: relative;
+}
+a {
+    cursor: pointer;
+}
+a.twitter {
+    display:block;
+    width:80px;
+    height:80px;
+    background-image:url(../../img/Social/TwOff.png);
+    background-position:0px 0px;
+}
+a.twitter:hover {
+    background-position:0px - 80px;
+    background-image:url(../../img/Social/TwOver.png);
+}
+
+a.twitter:active {
+    background-position:0px - 80px;
+    background-image:url(../../img/Social/TwActive.png);
+}
+
+a.facebook {
+    display:block;
+    width:80px;
+    height:80px;
+    background-image:url(../../img/Social/FaOff.png);
+    background-position:0px 0px;
+}
+a.facebook:hover {
+    background-position:0px - 80px;
+    background-image:url(../../img/Social/FaOver.png);
+}
+
+a.facebook:active {
+    background-position:0px - 80px;
+    background-image:url(../../img/Social/FaActive.png);
+}
+
+a.plus {
+    display:block;
+    width: 80px;
+    height: 80px;
+    background-image:url(../../img/Social/PiuOff.png);
+    background-position:0px 0px;
+}
+a.plus:hover {
+    background-position:0px - 80px;
+    background-image:url(../../img/Social/PiuOver.png);
+}
+
+a.plus:active {
+    background-position:0px - 80px;
+    background-image:url(../../img/Social/PiuActive.png);
+}
+
+a.google {
+    margin: 10px 10px 10px 10px;
+    display:block;
+    width: 60px;
+    height: 60px;
+    background-image:url(../../img/Social/Google.png);
+    background-position:0px 0px;
+}
+a.google:hover {
+    background-position:0px - 40px;
+    background-image:url(../../img/Social/GoogleOver.png);
+}
+
+a.pint {
+    margin: 10px 10px 10px 10px;
+    display:block;
+    width: 60px;
+    height: 60px;
+    background-image:url(../../img/Social/Pint.png);
+    background-position:0px 0px;
+}
+a.pint:hover {
+    background-position:0px - 40px;
+    background-image:url(../../img/Social/PintOver.png);
+}
+
+a.top {
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    width: 60px;
+    height:30px;
+    background-image:url(../../img/ico/tornaSu.png);
+    background-position:0px 0px;
+}
+a.top:hover {
+    background-position:0px - 60px;
+    background-image:url(../../img/ico/tornaSuOver.png);
+}
+
+a.genny{
+    margin: 10px 10px 10px 10px;
+    display:block;
+    width: 181px;
+    height: 51px;
+    background-image:url(../../img/ico/genny.png);
+    background-position:0px 0px;
+}
+
+a.genny:hover {
+    background-position:0px - 181px;
+    background-image:url(../../img/ico/gennyOver.png);
+}
+
+a.genny:active {
+    background-position:0px - 181px;
+    background-image:url(../../img/ico/gennyActive.png);
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+#school:hover{
+    cursor: pointer;
+}
+
+#school_s:hover{
+    cursor: pointer;
+}
+
+#tourism:hover{
+    cursor: pointer;
+}
+
+#tourism_s:hover{
+    cursor: pointer;
+}
+
+#email:hover{
+    cursor: pointer;
+}
+
+#login:hover{
+    cursor: pointer;
+}
+
+#home:hover{
+    cursor: pointer;
+}
+
+#maps:hover{
+    cursor: pointer;
+}
+
+#maps_s:hover{
+    cursor: pointer;
+}
+
+#info:hover{
+    cursor: pointer;
+}
+
+#info_s:hover{
+    cursor: pointer;
+}
+
+#citta{
+    border-bottom-right-radius:20px;
+    -moz-border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+    -moz-border-bottom-left-radius:20px;
+}
+
+
+
+//Menù alto
+
+#navigation {
+    height: 3em;
+    text-align: center;
+}
+
+#navigation ul {
+    height: 2em;
+    margin: 0;
+    list-style: none;
+}
+
+#navigation li {
+    float: left;
+    height: 100%;
+    margin-right: 20px;
+}
+
+#navigation a {
+    float: left;
+    height: 100%;
+    padding: 0 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#cursor {
+    margin-top: 10px;
+    background:#FFF;
+    height: 6px;
+    width: 0px;
+    position: absolute;
+    -moz-border-radius: 3px; /* Per firefox */
+    -webkit-border-radius: 3px; /* Safari e Chrome*/
+    border-radius: 3px; /* Standard CSS */
+}
+
+.icona_top{
+    height: 30px;
+    width: 30px;
+}
